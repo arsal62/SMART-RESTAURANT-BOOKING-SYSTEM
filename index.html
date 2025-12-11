@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES & FLAVOUR | Premium Steakhouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="flame">
+                <div class="flame-inner"></div>
+            </div>
+            <span class="preloader-text">FLAMES & FLAVOUR</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🔥</span>
+                <span class="logo-text">FLAMES & FLAVOUR</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#reservations" class="nav-link">Reservations</a></li>
+            </ul>
+            <button class="reserve-btn" id="navBookBtn">
+                <span class="btn-text">Book Now</span>
+                <span class="btn-icon">🎙️</span>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+            <li><a href="#reservations" class="mobile-nav-link">Reservations</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-image-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Grilled Steak" class="hero-bg-image">
+            <div class="smoke smoke-1"></div>
+            <div class="smoke smoke-2"></div>
+            <div class="smoke smoke-3"></div>
+            <div class="ember ember-1"></div>
+            <div class="ember ember-2"></div>
+            <div class="ember ember-3"></div>
+            <div class="ember ember-4"></div>
+            <div class="ember ember-5"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-line"></span>
+                <span class="badge-text">EST. 2024</span>
+                <span class="badge-line"></span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Where Fire</span>
+                <span class="title-line accent">Meets Flavour</span>
+            </h1>
+            <p class="hero-subtitle">Experience the art of perfectly aged, hand-selected prime cuts, seared to perfection over open flames. A symphony of smoke, char, and unparalleled taste.</p>
+            <div class="hero-cta">
+                <button class="cta-primary" id="heroVoiceBtn">
+                    <span class="cta-icon">🎙️</span>
+                    Reserve via Voice AI
+                </button>
+                <button class="cta-secondary" onclick="scrollToSection('menu')">
+                    View Our Cuts
+                </button>
+            </div>
+            <div class="hero-features">
+                <div class="feature">
+                    <span class="feature-number">28</span>
+                    <span class="feature-text">Day Dry-Aged</span>
+                </div>
+                <div class="feature-divider"></div>
+                <div class="feature">
+                    <span class="feature-number">100%</span>
+                    <span class="feature-text">Prime Beef</span>
+                </div>
+                <div class="feature-divider"></div>
+                <div class="feature">
+                    <span class="feature-number">1200°</span>
+                    <span class="feature-text">Searing Heat</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-visual">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=800&auto=format&fit=crop" alt="Chef preparing steak" class="about-img" loading="lazy">
+                    </div>
+                    <div class="about-accent-box">
+                        <span class="accent-number">15+</span>
+                        <span class="accent-text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-pattern"></div>
+            </div>
+            <div class="about-content">
+                <div class="section-badge">
+                    <span class="badge-icon">◆</span>
+                    <span>Our Story</span>
+                    <span class="badge-icon">◆</span>
+                </div>
+                <h2 class="about-title">Crafted with Passion, <br><span class="highlight">Served with Pride</span></h2>
+                <div class="about-text">
+                    <p>Born from an unwavering passion for the perfect steak, Flames & Flavour represents the culmination of generations of culinary expertise. Our journey began in the heart of cattle country, where we learned that exceptional beef is not merely cooked—it's celebrated.</p>
+                    <p>Every cut that graces our grill has been meticulously selected from heritage breed cattle, dry-aged in our climate-controlled chambers, and prepared by master butchers who understand that perfection lies in the details.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-icon">🔥</span>
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Steaks Served</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon">⭐</span>
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">Average Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon">👨‍🍳</span>
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Michelin Stars</span>
+                    </div>
+                </div>
+                <div class="about-signature">
+                    <div class="signature-line"></div>
+                    <span class="signature-text">— Chef Marcus Wellington</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section class="menu" id="menu">
+        <div class="menu-container">
+            <div class="menu-header">
+                <div class="section-badge light">
+                    <span class="badge-icon">◆</span>
+                    <span>Our Selection</span>
+                    <span class="badge-icon">◆</span>
+                </div>
+                <h2 class="menu-title">Prime Cuts</h2>
+                <p class="menu-subtitle">Each cut tells a story of heritage, care, and culinary mastery</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?q=80&w=600&auto=format&fit=crop" alt="Tomahawk Ribeye" class="card-img" loading="lazy">
+                        <div class="card-badge">Signature</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Tomahawk Ribeye</h3>
+                        <p class="card-description">40oz bone-in ribeye, 28-day aged, served with roasted bone marrow butter</p>
+                        <div class="card-footer">
+                            <span class="card-price">$128</span>
+                            <span class="card-tag">Most Popular</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?q=80&w=600&auto=format&fit=crop" alt="Wagyu A5 Striploin" class="card-img" loading="lazy">
+                        <div class="card-badge">Premium</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Wagyu A5 Striploin</h3>
+                        <p class="card-description">Japanese Wagyu, BMS 10+, lightly seared with Himalayan salt</p>
+                        <div class="card-footer">
+                            <span class="card-price">$185</span>
+                            <span class="card-tag">Chef's Choice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?q=80&w=600&auto=format&fit=crop" alt="Filet Mignon" class="card-img" loading="lazy">
+                        <div class="card-badge">Classic</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Filet Mignon</h3>
+                        <p class="card-description">12oz center-cut tenderloin, wrapped in applewood bacon</p>
+                        <div class="card-footer">
+                            <span class="card-price">$89</span>
+                            <span class="card-tag">Tender Cut</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?q=80&w=600&auto=format&fit=crop" alt="Porterhouse for Two" class="card-img" loading="lazy">
+                        <div class="card-badge">House Special</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Porterhouse for Two</h3>
+                        <p class="card-description">48oz T-bone perfection, combining strip and tenderloin</p>
+                        <div class="card-footer">
+                            <span class="card-price">$165</span>
+                            <span class="card-tag">Sharing Plate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section class="reservations" id="reservations">
+        <div class="reservations-bg">
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </div>
+        <div class="reservations-container">
+            <div class="reservations-content">
+                <div class="section-badge">
+                    <span class="badge-icon">◆</span>
+                    <span>Book Your Table</span>
+                    <span class="badge-icon">◆</span>
+                </div>
+                <h2 class="reservations-title">Reserve Your <br><span class="highlight">Experience</span></h2>
+                <p class="reservations-text">Skip the wait and book your table instantly using our revolutionary AI Voice Assistant. Simply speak your preferences, and our intelligent chatbot will handle the rest.</p>
+                
+                <div class="voice-feature">
+                    <div class="voice-icon-wrapper">
+                        <div class="voice-pulse"></div>
+                        <div class="voice-pulse delay-1"></div>
+                        <div class="voice-pulse delay-2"></div>
+                        <span class="voice-icon">🎙️</span>
+                    </div>
+                    <div class="voice-info">
+                        <h3 class="voice-title">AI Voice Reservations</h3>
+                        <p class="voice-description">Our cutting-edge voice agent understands natural language. Just tell it your party size, preferred date, and any special requests.</p>
+                    </div>
+                </div>
+
+                <div class="how-it-works">
+                    <h4 class="how-title">How It Works</h4>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h5>Click to Connect</h5>
+                                <p>Launch our AI voice assistant with a single click</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h5>Speak Naturally</h5>
+                                <p>Tell us your date, time, party size & preferences</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h5>Instant Confirmation</h5>
+                                <p>Receive immediate booking confirmation via Email</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="voice-cta" id="voiceCta">
+                    <span class="cta-pulse"></span>
+                    <span class="cta-content">
+                        <span class="cta-icon">🎙️</span>
+                        <span class="cta-text">
+                            <span class="cta-main">Start Voice Booking</span>
+                            <span class="cta-sub">Speak to reserve your table</span>
+                        </span>
+                    </span>
+                </button>
+
+                <div class="alternative-booking">
+                    <span class="alt-text">Prefer traditional booking?</span>
+                    <a href="tel:+1234567890" class="alt-link">Call (123) 456-7890</a>
+                </div>
+            </div>
+
+            <div class="reservations-visual">
+                <div class="chat-preview">
+                    <div class="chat-header">
+                        <div class="chat-status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">AI Assistant Active</span>
+                        </div>
+                        <span class="chat-title">Voice Reservation</span>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message ai">
+                            <span class="message-icon">🤖</span>
+                            <div class="message-content">
+                                <p>Hello, this is the AI assistant from Flames & Flavour. Would you like to book a table?</p>
+                            </div>
+                        </div>
+                        <div class="message user">
+                            <div class="message-content">
+                                <p>I'd like to book a table for 4 this Saturday at 7pm</p>
+                            </div>
+                            <span class="message-icon">👤</span>
+                        </div>
+                        <div class="message ai">
+                            <span class="message-icon">🤖</span>
+                            <div class="message-content">
+                                <p>Perfect! I have a lovely corner booth available for 4 guests on Saturday at 7:00 PM. Would you like a window seat or normal seating?</p>
+                            </div>
+                        </div>
+                        <div class="message user">
+                            <div class="message-content">
+                                <p>Window seat please!</p>
+                            </div>
+                            <span class="message-icon">👤</span>
+                        </div>
+                        <div class="message ai typing">
+                            <span class="message-icon">🤖</span>
+                            <div class="message-content">
+                                <div class="typing-indicator">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <div class="input-wrapper">
+                            <span class="mic-icon active">🎤</span>
+                            <span class="input-placeholder">Listening...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-icon">🔥</span>
+                        <span class="logo-text">FLAMES & FLAVOUR</span>
+                    </a>
+                    <p class="footer-tagline">Where every cut tells a story</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Hours</h4>
+                        <p>Mon - Thu: 5PM - 10PM</p>
+                        <p>Fri - Sat: 5PM - 11PM</p>
+                        <p>Sunday: 4PM - 9PM</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Location</h4>
+                        <p>123 Prime Cut Avenue</p>
+                        <p>Culinary District</p>
+                        <p>New York, NY 10001</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <p>(123) 456-7890</p>
+                        <p>hello@flamesandflavour.com</p>
+                        <a href="#" class="footer-reserve" id="footerVoiceBtn">Voice Booking →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flames & Flavour. All rights reserved.</p>
+                <p>Crafted with passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Voice Button -->
+    <button class="floating-voice-btn" id="floatingVoiceBtn" title="Book via Voice AI">
+        <div class="floating-pulse"></div>
+        <span class="floating-icon">🎙️</span>
+    </button>
+
+    <!-- Keyboard Input Panel (appears during call) -->
+    <div class="keyboard-input-panel" id="keyboardPanel">
+        <div class="keyboard-panel-header">
+            <span class="panel-status">
+                <span class="status-dot-live"></span>
+                Call Active
+            </span>
+            <button class="panel-minimize" id="minimizePanel">−</button>
+        </div>
+        <div class="keyboard-panel-content">
+            <p class="panel-hint">Type your email or any info for accuracy:</p>
+            <div class="input-group">
+                <input type="text" id="userTextInput" placeholder="Type here (e.g., email@example.com)" autocomplete="email">
+                <button class="send-btn" id="sendTextBtn">
+                    <span>Send</span>
+                </button>
+            </div>
+            <div class="quick-actions">
+                <button class="quick-btn" data-text="@gmail.com">@gmail.com</button>
+                <button class="quick-btn" data-text="@yahoo.com">@yahoo.com</button>
+                <button class="quick-btn" data-text="@hotmail.com">@hotmail.com</button>
+                <button class="quick-btn" data-text="@outlook.com">@outlook.com</button>
+            </div>
+        </div>
+        <button class="end-call-btn" id="endCallBtn">
+            <span>📞</span> End Call
+        </button>
+    </div>
+
+    <!-- VAPI SDK - Load asynchronously -->
+    <script>
+        // Load VAPI SDK asynchronously to not block page load
+        (function() {
+            var script = document.createElement('script');
+            script.type = 'module';
+            script.textContent = `
+                import Vapi from 'https://cdn.jsdelivr.net/npm/@vapi-ai/web@2.2.3/+esm';
+                window.Vapi = Vapi;
+                window.vapiLoaded = true;
+                console.log('✅ VAPI SDK loaded');
+            `;
+            document.head.appendChild(script);
+        })();
+    </script>
+    <script src="script.js" defer></script>
+</body>
+</html>
